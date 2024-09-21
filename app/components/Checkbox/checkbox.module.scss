@@ -1,0 +1,31 @@
+$accent: #0075ff;
+$mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="3" stroke="%23000" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path d="M5 12l5 5l10 -10"/></svg>');
+
+.checkbox {
+  &[type="checkbox"] {
+    appearance: none;
+    aspect-ratio: 1;
+    background: #fff;
+    border: 1px solid #b0bbd1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+
+    &:checked {
+      border-color: #0796d3;
+      background: #a0dcf6;
+
+      &::after {
+        content: "";
+        background: #0796d3;
+        inset: 0;
+        position: absolute;
+        mask: $mask no-repeat center / contain;
+        -webkit-mask: $mask no-repeat center / contain;
+      }
+    }
+  }
+}
