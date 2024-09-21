@@ -14,7 +14,7 @@
 
 </div>
 
-<img src="https://img.shields.io/github/license/Ricnaga/focalpoint-todo?&style=for-the-badge"/>
+<img src="https://img.shields.io/github/license/Ricnaga/focalpoint-todo"/>
 
 ### <div align="center"> Aplicação em Nextjs/Typescript, abordando conceitos sobre: </div>
 
