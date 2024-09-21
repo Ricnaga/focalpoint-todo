@@ -1,14 +1,16 @@
-$primary: rgba(0, 0, 0, 1);
-$secondary: rgba(0, 0, 0, 0.54);
-$tertiary: rgba(255, 255, 255, 1);
+@use "../../styles/index" as s;
+
+$primary: s.colors-pick("neutral800");
+$secondary: s.colors-pick("neutral600");
+$tertiary: s.colors-pick("neutral100");
 
 .typography {
   &--size {
       &-medium {
-        font-size: 1rem;
+        font-size: s.fn-rem(16);
       }
     &-large {
-      font-size: 1.5rem;
+      font-size: s.fn-rem(24);
     }
   }
   

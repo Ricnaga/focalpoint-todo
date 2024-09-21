@@ -1,0 +1,61 @@
+@keyframes scale-in {
+  from {
+    scale: 0;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+@keyframes scale-out {
+  from {
+    scale: 1;
+    opacity: 1;
+  }
+  to {
+    scale: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes scale-in-80 {
+  from {
+    scale: 0.8;
+    opacity: 0.8;
+  }
+  to {
+    scale: 1;
+    opcaity: 1;
+  }
+}
+
+@keyframes scale-out-80 {
+  from {
+    scale: 1;
+    opcaity: 1;
+  }
+  to {
+    scale: 0.8;
+    opacity: 0.8;
+  }
+}
+
+@keyframes scale-in-90 {
+  from {
+    scale: 0.9;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes scale-out-90 {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 0.9;
+  }
+}

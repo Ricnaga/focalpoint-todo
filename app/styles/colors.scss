@@ -1,0 +1,22 @@
+@use "./functions" as fn;
+
+$palette: (
+  "neutral100": #fff,
+  "neutral200": #f7f9fd,
+  "neutral300": #eaecf0,
+  "neutral400": #e7eefb,
+  "neutral500": #d7dde9,
+  "neutral600": rgba(0, 0, 0, 0.54),
+  "neutral700": rgba(0, 0, 0, 0.56),
+  "neutral800": #000,
+  "gray100": #b0bbd1,
+  "red100": #f05353,
+  "red200": #d30707,
+  "blue100": #a0dcf6,
+  "blue200": #53c0f0,
+  "blue300": #0796d3,
+);
+
+@function pick($value) {
+  @return fn.map-values($palette, $value);
+}

@@ -1,17 +1,27 @@
-$primary: linear-gradient(to right, #0796d3, #53c0f0);
-$secondary: linear-gradient(to right, #d30707, #f05353);
-$tertiary: #e7eefb;
+@use "../../styles/index" as s;
+
+$primary: linear-gradient(
+  to right,
+  s.colors-pick("blue200"),
+  s.colors-pick("blue100")
+);
+$secondary: linear-gradient(
+  to right,
+  s.colors-pick("red200"),
+  s.colors-pick("red100")
+);
+$tertiary: s.colors-pick("neutral400");
 
 .button {
   background: transparent;
   border: none;
   cursor: pointer;
   width: 100%;
-  height: 3.1875rem;
-  border-radius: 8px;
-  font-size: 1rem;
+  height: s.fn-rem(51);
+  border-radius: s.radii-pick("sm");
+  font-size: s.fn-rem(16);
   font-weight: 500;
-  color: #fff;
+  color: s.colors-pick("neutral100");
 
   &--variant {
     &-primary {
@@ -22,9 +32,9 @@ $tertiary: #e7eefb;
     }
     &-tertiary {
       background: $tertiary;
-      font-size: 1rem;
+      font-size: s.fn-rem(16);
       font-weight: 400;
-      color: #000;
+      color: s.colors-pick("neutral800");
     }
   }
 }

@@ -1,25 +1,27 @@
+@use "../../styles/index" as s;
+
 .home_container {
   display: grid;
-  gap: 1.5rem;
+  gap: s.fn-rem(24);
 }
 
 .home_header {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr;
-  row-gap: 0.5rem;
+  row-gap: s.fn-rem(8);
 
-  padding-bottom: 1.5rem;
-  border-bottom: 1px #d7dde9 solid;
+  padding-bottom: s.fn-rem(24);
+  border-bottom: 1px s.colors-pick("neutral500") solid;
 
   &__title {
-    font-size: 1rem;
+    font-size: s.fn-rem(16);
   }
 }
 
 @media (min-width: 640px) {
   .home_container {
-    gap: 2.5rem;
+    gap: s.fn-rem(40);
   }
 
   .home_header {
@@ -27,7 +29,7 @@
 
     &__title {
       text-align: center;
-      font-size: 1.5rem;
+      font-size: s.fn-rem(24);
       font-weight: 500;
     }
 

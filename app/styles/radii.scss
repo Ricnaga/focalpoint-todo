@@ -1,0 +1,11 @@
+@use "./functions" as fn;
+
+$radius: (
+  "xsm": 0.25rem,
+  "sm": 0.5rem,
+  "md": 1rem,
+);
+
+@function pick($value) {
+  @return fn.map-values($radius, $value);
+}
